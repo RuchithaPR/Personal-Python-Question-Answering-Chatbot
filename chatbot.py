@@ -7,10 +7,8 @@ knowledge_base = [
         "question": "What is Python?",
         "answer": "Python is a high-level programming language known for its simple syntax."
     },
-    {
-        "question": "What is a variable?",
-        "answer": "A variable is a name used to store or refer to a value."
-    },
+    {"question":"What is a variable? How do I store a value in Python?",
+     "answer":"In Python, you can store a value in a variable using the assignment operator (=). For example, age = 20 stores the value 20 in the variable age."},
     {
         "question": "What is machine learning?",
         "answer": "Machine learning enables computers to learn patterns from data."
@@ -73,7 +71,7 @@ questions = [item["question"] for item in knowledge_base]
 vectorizer = TfidfVectorizer()
 question_vectors = vectorizer.fit_transform(questions)
 
-def get_answer(user_question, threshold=0.65):
+def get_answer(user_question, threshold=0.70):
     if not user_question.strip():
         return "Please enter a question.", 0.0
 

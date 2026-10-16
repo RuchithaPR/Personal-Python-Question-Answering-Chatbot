@@ -152,3 +152,121 @@ Successfully expanded the chatbot's knowledge base, improved similarity-based an
 - Continue improving the chatbot according to the project requirements.
 - Test additional question variations and edge cases.
 - Update the project development log and GitHub repository.
+
+## Day 3: Knowledge Base Expansion and Testing
+
+### Objectives
+- Expand the chatbot's knowledge base with additional Python, AI, and Machine Learning questions.
+- Improve the chatbot's ability to answer a wider range of questions.
+- Test the chatbot using different questions and evaluate its responses.
+
+### Work Completed
+- Expanded the knowledge base with additional question-and-answer pairs.
+- Added questions covering Python lists, loops, dictionaries, functions, and variables.
+- Added questions covering deep learning, data science, neural networks, supervised learning, unsupervised learning, and natural language processing.
+- Used TF-IDF vectorization to represent questions numerically.
+- Used cosine similarity to compare user questions with questions stored in the knowledge base.
+- Tested the chatbot with different questions to verify its responses.
+- Checked how the chatbot handles questions that are not sufficiently related to its knowledge base.
+
+### Technologies Used
+- Python
+- NumPy
+- Scikit-learn
+- TF-IDF Vectorization
+- Cosine Similarity
+
+### Outcome
+Successfully expanded the chatbot's knowledge base and tested its question-matching functionality. The chatbot can answer supported questions and reject questions when it cannot find a sufficiently suitable match.
+
+### Status
+Completed
+
+## Day 4: Chatbot Improvements and Tuning
+
+### Objectives
+- Evaluate the chatbot's responses to differently worded questions.
+- Identify and correct incorrect question matching.
+- Improve the chatbot's ability to recognize user intent.
+- Test the chatbot using relevant and unrelated questions.
+
+### Work Completed
+
+1. Tested the chatbot with differently worded questions, including:
+   - Can you explain machine learning to me?
+   - Tell me about neural networks.
+   - How do I store a value in Python?
+   - What is deep learning?
+
+2. Tested the chatbot with an unrelated question:
+   - What is the capital of France?
+
+3. Identified a question-matching issue:
+   - The chatbot initially returned an incorrect answer about functions when asked how to store a value in Python.
+   - The incorrect answer was accepted with a similarity score of 0.68.
+
+4. Adjusted the similarity threshold from 0.65 to 0.70 to make the chatbot more selective when accepting matches.
+
+5. Improved the knowledge base by updating the variable-related question to include an alternative way of asking about storing values in Python.
+
+6. Tested the variable-related question again and confirmed that the chatbot returned the appropriate answer.
+
+7. Retested the deep learning question and confirmed that the chatbot continued to provide the expected answer.
+
+8. Verified that the chatbot dashboard continued to function using Streamlit.
+
+### Improvements Made
+- Increased the similarity threshold to 0.70.
+- Updated the variable-related knowledge-base entry to improve question matching.
+- Improved the answer provided for questions about storing values in Python.
+- Tested the chatbot's ability to reject unrelated questions.
+
+### Technologies Used
+- Python
+- Streamlit
+- NumPy
+- Scikit-learn
+- TF-IDF Vectorization
+- Cosine Similarity
+
+### Outcome
+Improved the chatbot's handling of questions about Python variables and verified its responses to several supported questions. Testing also confirmed that unrelated questions can be rejected.
+
+### Status
+Technical improvements and testing completed. Documentation and final GitHub updates pending.
+
+## Day 5: Final Polishing and Submission Preparation
+
+### Objectives
+- Perform final testing of the chatbot.
+- Verify the application interface and functionality.
+- Review the project files.
+- Prepare the project for GitHub submission.
+
+### Work Completed
+
+1. Tested the chatbot with the question "What is Python?" and verified that it returned the expected explanation.
+
+2. Tested the question "How do I store a value in Python?" and verified that the chatbot provided an appropriate answer about variables and the assignment operator.
+
+3. Tested the unrelated question "What is the capital of France?" and verified that the chatbot rejected the question rather than providing an unrelated answer.
+
+4. Verified that the Streamlit dashboard launched and functioned correctly.
+
+5. Reviewed the project structure and confirmed that the required project files were present.
+
+6. Reviewed the knowledge base, question-matching logic, and similarity threshold improvements made during development.
+
+### Technologies Used
+- Python
+- Streamlit
+- NumPy
+- Scikit-learn
+- TF-IDF Vectorization
+- Cosine Similarity
+
+### Outcome
+Completed the final functional tests and verified the chatbot dashboard and essential project files. The project is prepared for the final GitHub update and submission.
+
+### Status
+Final testing completed. GitHub update and submission verification pending.
